@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    color: darkcyan;
+}
+
+.header {
+    height: 150px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 50px;
+    margin: 0;
+    color: darkcyan;
+    font-size: 50px;
+    text-transform: uppercase;
+}
