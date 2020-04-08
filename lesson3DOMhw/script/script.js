@@ -1,13 +1,53 @@
 // -- створити об'єкт (не меньше 5ти властивостей) який описує
 // - собаку
+let dog = {
+    name: 'Lucky',
+    age: 7,
+    sex: 'male',
+    breed: 'mops',
+    color: 'black'
+}
+console.log(dog);
 // - людину
+let johny = {
+    name: 'John',
+    age: 23,
+    weight: 100,
+    height: 175,
+    muscles: 'normal'
+}
+console.log(johny);
 // - автомобіль
+let car = {
+    marka: 'Opel',
+    model: 'Astra G',
+    age: 22,
+    engineV: 1.6,
+    color: 'gray'
+}
 // - квартиру
+let flat = {
+    square: 35,
+    kitchen: 1,
+    bedroom: 1,
+    bathroom: 1,
+    price: 25.000
+}
 // - книгу
+let book = {
+    title: 'Learning JavaScript',
+    author: 'Ethan Brown',
+    publichingHouse: "O'Reilly",
+    size: 367,
+    price: 350
+}
 //
 // -- Створити масив та вивести його в консоль:
 //     - з 5 собак
+let dogs = ['Buldog', 'Mops', 'Pitbul', 'Chao-chao', 'Toj terier'];
 // - 3 5 людей
+let people = ['Alisa', 'Kostya',  johny, 'Ethan', 'Max'];
+console.log(people);
 // - з 5 автомобілів
 //
 // -- створити об'єкт (не меньше 5ти властивостей) який описує, одна з властивостей обов'язково повинна бути об'єктом,ще одна - масивом
