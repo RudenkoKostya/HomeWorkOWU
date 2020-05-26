@@ -1,5 +1,39 @@
-#text {
-    width: 400px;
-    height: 400px;
-    background-color: #1a0dab;
+/*#text {*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    background-color: #1a0dab;*/
+/*}*/
+
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.menu {*/
+/*    width: 150px;*/
+/*    height: 30px;*/
+/*    background-color: #2b7de9;*/
+/*    padding: 5px;*/
+/*    border-bottom: 2px solid #1a0dab;*/
+/*}*/
+
+/*ul {*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: none;*/
+/*}*/
+
+/*li {*/
+/*    margin: 0;*/
+/*    padding: 5px;*/
+/*    height: 20px;*/
+/*    width: 150px;*/
+/*    background-color: #2b7de9;*/
+/*    border-bottom: 2px solid #1a0dab;*/
+/*}*/
+
+input {
+    margin-bottom: 10px;
+    width: 150px;
 }

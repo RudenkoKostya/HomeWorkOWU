@@ -13,16 +13,85 @@
 // };
 //
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+// const myBtn = document.querySelector('.btnAge');
 //
+// myBtn.onclick = ev => {
+//     const myInput = document.forms.mainForm.age;
+//     const value = myInput.value;
+//     value < 18
+//     ?console.log('Юзеру менше ніж 18 років')
+//     :console.log(`Юзеру ${value} років`)
+// };
+
+// const menu = document.querySelector('.menu');
+// const ul = document.querySelector('ul');
+//
+// menu.onclick = ev => {
+//     ul.style.display == 'none'
+//     ?ul.style.display = 'block'
+//         :ul.style.display = 'none'
+// };
+
+
+
+
 // - Создайте меню, которое раскрывается/сворачивается при клике
 //
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
-//     Вывести список комментариев в документ, каждый в своем блоке.
+// let commentList = [
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+//     {title : 'lorem', body:'lorem ipsum dolo sit ameti'}
+// ];
+// //     Вывести список комментариев в документ, каждый в своем блоке.
+// let container = document.querySelector('.comment');
+// commentList.forEach(comment => {
+//     let div = document.createElement('div');
+//     let btn = document.createElement('button');
+//     let h2 = document.createElement('h2');
+//     let p = document.createElement('p');
+//     h2.innerText = comment.title;
+//     p.innerText = comment.body;
+//
+//
+//
+//     btn.innerText = 'Off';
+//     btn.onclick = ev => {
+//         p.style.display == 'block'
+//             ?p.style.display = 'none'
+//             :p.style.display = 'block'
+//     };
+//     div.appendChild(h2);
+//     div.appendChild(p);
+//     div.appendChild(btn);
+//     container.appendChild(div);
+//
+// });
+
+
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
 //
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
-// Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+// Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.\
+// const form1 = document.forms.mainFormOne;
+// const form2 = document.forms.mainFormTwo;
+// const fBtn = document.getElementById('formBtn');
+//
+//
+// fBtn.onclick = ev => {
+//     let name = form1.userName.value;
+//     let surname = form1.userSurname.value;
+//     let hobby = form2.hobby.value;
+//     let job = form2.job.value;
+//
+//     console.log(`Новий юзер - ${name} ${surname}: хоббі ${hobby}, робота ${job}`);
+// };
+
+
 //
 // - Створити функцію, яка генерує таблицю.
 //     Перший аргумент визначає кількість строк.
@@ -33,9 +102,93 @@
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+// let tableForm = document.forms.tableForm;
+// let elTable = document.querySelector('.tableHere');
+// function tableGen(tr, td, elemPaste) {
+//     const table = document.createElement('table');
+//     for (let itr = 0; itr < tr; itr++) {
+//         const tR = document.createElement('tr');
+//         for (let itd = 0; itd < td; itd++) {
+//             const tD = document.createElement('td');
+//             let value = tableForm.value.value;
+//             tD.innerText = value;
+//
+//             tR.appendChild(tD);
+//         }
+//         table.appendChild(tR);
+//     }
+//     elemPaste.appendChild(table);
+// }
+//
+//
+// const getBtn = document.getElementById('tableGenerate');
+// getBtn.onclick = ev => {
+//     let trValue = tableForm.tr.value;
+//     let tdValue = tableForm.td.value;
+//     let value = tableForm.value.value;
+//     tableGen(trValue, tdValue, elTable);
+// };
+
 //
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+// let pageArr = [
+//     {
+//         id: 1,
+//         img_url: 'page/img1.jpg'
+//     },
+//     {
+//         id: 2,
+//         img_url: 'page/img2.jpg'
+//     },
+//     {
+//         id: 3,
+//         img_url: 'page/img3.jpg'
+//     },
+//     {
+//         id: 4,
+//         img_url: 'page/img4.jpg'
+//     },
+//     {
+//         id: 5,
+//         img_url: 'page/img5.jpg'
+//     },
+//     {
+//         id: 6,
+//         img_url: 'page/img6.jpg'
+//     }
+// ];
 //
+// let gallery = document.getElementById('gallery');
+// let img = document.createElement('img');
+// let btn1 = document.createElement('button');
+// let btn2 = document.createElement('button');
+//
+//
+// btn1.innerText = 'Left';
+// btn2.innerText = 'Right';
+// let index = 0;
+// img.width = 300;
+// img.src = pageArr[index].img_url;
+//
+// gallery.appendChild(img);
+// gallery.appendChild(btn1);
+// gallery.appendChild(btn2);
+//
+// btn1.onclick = () => {
+//     index - 1 < 0
+//     ?index = pageArr.length - 1
+//         :index = index - 1
+//     img.src = pageArr[index].img_url;
+// };
+//
+// btn2.onclick = () => {
+//     index + 1 > pageArr.length - 1
+//     ?index = 0
+//         :index = index + 1
+//     img.src = pageArr[index].img_url;
+// };
+//
+
 //
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
